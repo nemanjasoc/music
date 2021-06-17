@@ -16,3 +16,21 @@ ul {
 li {
     display: inline-block;
 }
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1400px;
+	box-sizing: content-box;
+    padding: 0 15px;
+}
+
+// .container {
+// 	position: relative;
+// 	margin: 0 auto;
+// 	max-width: 1160px;
+// 	box-sizing: content-box;
+// 	padding-left: 15px;
+// 	padding-right: 15px;
+// 	width: calc(100% - 30px);
+// }
