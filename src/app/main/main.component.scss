@@ -27,6 +27,10 @@
         height: 392px;
         background-color: #ffffff;
         margin-bottom: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
         .song-box-img {
             background-image: url("src/assets/images/create-your-own.jpg");
@@ -43,6 +47,34 @@
                 color: #ffffff;
                 text-align: center;
             }
+
+            p {
+                margin: 20px 10px;
+                padding: 0;
+            }
+        }
+
+        .black-circle-img {
+            background-image: url("src/assets/images/black-circle.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            img {
+                &:nth-child(2) {
+                    position: absolute;
+                }
+            }
+        }
+
+        p {
+            padding: 0 25px;
+            text-align: center;
         }
     }
 }
@@ -50,6 +82,55 @@
 .horizontal-line {
     width: 70px;
     border-bottom: 5px solid #b8dc1e;
+}
+
+.most-popular {
+    background-image: url("src/assets/images/banner-most-popular.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 770px;
+    width: 100%;
+}
+
+.most-popular-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        color: #ffffff;
+    }
+}
+
+.most-popular-boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.most-popular-box {
+    width: 33%;
+}
+
+.most-popular-box-header {
+    height: 60px;
+    background-color: #333333;
+    border-bottom: 5px solid #bbdd28;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: #ffffff;
+}
+
+.most-popular-box-row {
+    display: flex;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.row-text {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 670px) {

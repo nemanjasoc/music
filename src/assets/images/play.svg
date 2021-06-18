@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #adadad;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Shape_590_copy_2" data-name="Shape 590 copy 2" class="cls-1" d="M389.956,1580.32l9.721,6.17-9.721,6.18v-12.35m-0.319-1.33a0.687,0.687,0,0,0-.652.72v13.57a0.678,0.678,0,0,0,.652.71,0.651,0.651,0,0,0,.324-0.09l10.683-6.79a0.753,0.753,0,0,0,0-1.24l-10.683-6.78a0.575,0.575,0,0,0-.324-0.1h0Z" transform="translate(-389 -1579)"/>
+</svg>
