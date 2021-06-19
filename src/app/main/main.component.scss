@@ -1,3 +1,5 @@
+// Editor section
+
 .editors {
     background-image: url("src/assets/images/banner.jpg");
     background-repeat: no-repeat;
@@ -11,6 +13,8 @@
         color: #ffffff;
     }
 }
+
+// Songs section
 
 .songs {
     background-color: #eaecf2;
@@ -84,21 +88,31 @@
     border-bottom: 5px solid #b8dc1e;
 }
 
+// Most popular section 
+
 .most-popular {
     background-image: url("src/assets/images/banner-most-popular.jpg");
     background-repeat: no-repeat;
     background-position: center;
     height: 770px;
     width: 100%;
-}
+    position: relative;
 
-.most-popular-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h2 {
-        color: #ffffff;
+    .most-popular-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    
+        h2 {
+            color: #ffffff;
+            text-align: center;
+        }
     }
 }
 
@@ -106,10 +120,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .most-popular-box {
-    width: 33%;
+    width: 32%;
 }
 
 .most-popular-box-header {
@@ -133,8 +148,142 @@
     flex-direction: column;
 }
 
+//Latest section
+
+.latest {
+    background-color: #ffffff;
+    padding: 80px 0 90px 0;
+    
+    h2 {
+        text-align: center;
+    }
+}
+
+.latest-images-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.latest-box {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    // width: calc(16.67% - 40px);
+}
+
+.latest-img {
+    background-image: url("src/assets/images/latest-img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 212px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.latest-image-icons {
+    color: #ffffff;
+    margin: 15px;
+
+    img {
+        margin-right: 10px;
+    }
+
+    > div {
+        margin-top: 10px;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+// .latest-text {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// How to section
+
+.how-to {
+    background-color: #eaf0f6;
+    padding: 70px 0;
+
+    h2 {
+        position: relative;
+        text-align: center;
+
+        &::before {
+            content: "";
+            display: block;
+            height: 1px;
+            background-color: #000000;
+            position: absolute;
+            top: 13px;
+            left: 0;
+            width: calc(50% - 60px);
+        } 
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1px;
+            background-color: #000000;
+            position: absolute;
+            top: 13px;
+            right: 0;
+            width: calc(50% - 60px);
+        } 
+    }
+}
+
+.how-to-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.how-to-text-content {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-top: 10px solid #b8dc1e;
+    margin-top: -4px;
+}
+
+.right-side-content {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+// Media query
+
+// @media (max-width: 992px) {
+//     .most-popular-box {
+//         width: 50%;
+//     }
+// }
+
+@media (max-width: 651px) {
+    .how-to-wrapper {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 670px) {
     .song-boxes {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 441px) {
+    .latest-images-wrapper {
         justify-content: center;
     }
 }
