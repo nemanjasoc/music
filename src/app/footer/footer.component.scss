@@ -1,3 +1,5 @@
+@import 'src/app/scss/mixins';
+
 footer {
     background-color: #333333;
     height: 110px;
@@ -20,6 +22,10 @@ footer {
 
         span {
             color: #ffffff;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+            font-family: "PT Sans";
         }
     }
 
@@ -28,8 +34,11 @@ footer {
         align-items: center;
 
         span {
-            color: #b8dc1e;
             margin-right: 20px;
+            font-size: 13px;
+            color: #b8dc1e;
+            font-weight: 700;
+            font-family: "Open Sans";
         }
 
         .social-icons {
@@ -54,8 +63,16 @@ footer {
                 li {
                     a {
                         margin-left: 20px;
-                        color: #b8dc1e;
                         text-decoration: none;
+                        font-size: 15px;
+                        color: #b8dc1e;
+                        font-weight: 400;
+                        font-family: "PT Sans";
+                        @include transition(color .2s linear);
+
+                        &:hover {
+                            color: #ffffff;
+                        }
                     }
                 }
             }
@@ -64,6 +81,9 @@ footer {
         .gray-title {
             color: #919191;
             margin-left: 20px;
+            font-size: 15px;
+            font-weight: 400;
+            font-family: "PT Sans";
         }
     }
 }
