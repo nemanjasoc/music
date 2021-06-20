@@ -7,7 +7,7 @@ html, body {
 
 body { 
     margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif;  
+    // font-family: Roboto, "Helvetica Neue", sans-serif;  
 }
 
 ul {
@@ -41,5 +41,64 @@ li {
     color: #b8dc1e;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// Material select style
+
+.mat-form-field-infix {
+    width: 40px !important;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: #333333;
+}
+
+.mat-option:hover:not(.mat-option-disabled), .mat-option:focus:not(.mat-option-disabled) {
+    background: #333333;
+    color: #ffffff;
+}
+
+.mat-select-value {
+    color: #ffffff;
+}
+
+.mat-select-arrow {
+    color: #ffffff;
+    margin: 0 12px 0 0 !important;
+}
+
+.mat-form-field-underline {
+    display: none;
+}
+
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+    color: #ffffff;
+}
+
+.mat-option {
+    padding: 0;
+    text-align: center;
+}
+
+.mat-form-field-infix {
+    padding: 0 0;
+    border-top: 0;
+}
+
+.mat-form-field-wrapper {
+    padding-bottom: 0;
+}
+
+.mat-select-value-text {
+    font-size: 12px;
+}
+
+.cdk-overlay-container, .cdk-global-overlay-wrapper {
+    top: 40px !important;
+}
+
+.mat-select-panel {
+    max-width: 1px !important;
+}
+
+.mat-option-text {
+    text-align: center;
+}

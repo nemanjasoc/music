@@ -8,7 +8,10 @@
                 <li><a href="#" title="People">People</a></li>
                 <li><a href="#" title="Events">Events</a></li>
                 <li><a href="#" title="Market">Market</a></li>
-                <li><a href="#" title="Learning">Learning</a></li>
+                <li>
+                    <a href="#" title="Learning">Learning</a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </li>
             </ul>
         </nav>
         <form>
@@ -26,7 +29,18 @@
             </div>
             <img src="../../assets/images/users.svg" alt="users icon" />
             <img src="../../assets/images/user-img.png" alt="user image" />
-            <img src="../../assets/images/en.png" alt="en" />
+            <div class="vertical-line"></div>
+            <div class="select-language">
+                <img *ngIf="selectedOption === 'en'" src="../../assets/images/en.png" alt="en" />
+                <img *ngIf="selectedOption === 'sr'" src="../../assets/images/sr.png" alt="sr" />
+                <mat-form-field appearance="none">
+                    <mat-select [(value)]="selectedOption">
+                        <mat-option *ngFor="let language of languages" [value]="language.value">
+                            {{language.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
 
         <div class="menu-bar">
@@ -59,7 +73,18 @@
                 </div>
                 <img src="../../assets/images/users.svg" alt="users icon" />
                 <img src="../../assets/images/user-img.png" alt="user image" />
-                <img src="../../assets/images/en.png" alt="en" />
+                <div class="vertical-line"></div>
+                <div class="select-language">
+                    <img *ngIf="selectedOption === 'en'" src="../../assets/images/en.png" alt="en" />
+                    <img *ngIf="selectedOption === 'sr'" src="../../assets/images/sr.png" alt="sr" />
+                    <mat-form-field appearance="none">
+                        <mat-select [(value)]="selectedOption">
+                            <mat-option *ngFor="let language of languages" [value]="language.value">
+                                {{language.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
             </div>
         </div>
     </div>
