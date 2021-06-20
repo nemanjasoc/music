@@ -1,24 +1,66 @@
 <header>
-    <img src="../../assets/images/logo.png" alt="logo" />
-    <nav>
-        <ul>
-            <li>Music</li>
-            <li>Brands</li>
-            <li>People</li>
-            <li>Events</li>
-            <li>Market</li>
-            <li>Learning</li>
-        </ul>
-    </nav>
-    <form>
-        <input type="search" id="search" name="search" placeholder="Search">
-        <img src="../../assets/images/search-icon.svg" alt="search icon" />
-    </form>
-    <div class="header-right-side">
-        <img src="../../assets/images/envelope.svg" alt="envelope icon" />
-        <img src="../../assets/images/bell.svg" alt="bell icon" />
-        <img src="../../assets/images/users.svg" alt="users icon" />
-        <img src="../../assets/images/user-img.png" alt="user image" />
-        <img src="../../assets/images/en.png" alt="en" />
+    <div class="header-content">
+        <img src="../../assets/images/logo.png" alt="logo" />
+        <nav>
+            <ul>
+                <li><a [routerLink]="['/music']" title="Music">Music</a></li>
+                <li><a href="#" title="Brands">Brands</a></li>
+                <li><a href="#" title="People">People</a></li>
+                <li><a href="#" title="Events">Events</a></li>
+                <li><a href="#" title="Market">Market</a></li>
+                <li><a href="#" title="Learning">Learning</a></li>
+            </ul>
+        </nav>
+        <form>
+            <input type="search" id="search" name="search" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </form>
+        <div class="header-right-side">
+            <div class="envelope">
+                <div class="badge">7</div>
+                <img src="../../assets/images/envelope.svg" alt="envelope icon" />
+            </div>
+            <div class="bell">
+                <div class="badge">2</div>
+                <img src="../../assets/images/bell.svg" alt="bell icon" />
+            </div>
+            <img src="../../assets/images/users.svg" alt="users icon" />
+            <img src="../../assets/images/user-img.png" alt="user image" />
+            <img src="../../assets/images/en.png" alt="en" />
+        </div>
+
+        <div class="menu-bar">
+            <div class="dropbtn">
+                <i class="fa fa-bars" aria-hidden="true" (click)="showDropdownMenu = !showDropdownMenu"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown-content" *ngIf="showDropdownMenu">
+        <div class="dropdown-menu">
+            <nav>
+                <ul>
+                    <li><a href="/music" title="Music">Music</a></li>
+                    <li><a href="#" title="Brands">Brands</a></li>
+                    <li><a href="#" title="People">People</a></li>
+                    <li><a href="#" title="Events">Events</a></li>
+                    <li><a href="#" title="Market">Market</a></li>
+                    <li><a href="#" title="Learning">Learning</a></li>
+                </ul>
+            </nav>
+            <div class="header-right-side">
+                <div class="envelope">
+                    <div class="badge">7</div>
+                    <img src="../../assets/images/envelope.svg" alt="envelope icon" />
+                </div>
+                <div class="bell">
+                    <div class="badge">2</div>
+                    <img src="../../assets/images/bell.svg" alt="bell icon" />
+                </div>
+                <img src="../../assets/images/users.svg" alt="users icon" />
+                <img src="../../assets/images/user-img.png" alt="user image" />
+                <img src="../../assets/images/en.png" alt="en" />
+            </div>
+        </div>
     </div>
 </header>

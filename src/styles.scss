@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~font-awesome/css/font-awesome.min.css";
+
 html, body { 
     height: 100%; 
 }
@@ -25,3 +27,19 @@ li {
     padding: 0 15px;
     width: calc(100% - 30px);
 }
+
+::placeholder {
+    color: #b8dc1e;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #b8dc1e;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #b8dc1e;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
