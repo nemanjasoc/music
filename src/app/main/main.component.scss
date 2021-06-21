@@ -471,12 +471,10 @@
             font-family: "PT Sans";
         }
     }
-}
 
-.right-side-content {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 20px;
+    .mat-form-field {
+        margin-top: 60px;
+    }
 }
 
 // Media query

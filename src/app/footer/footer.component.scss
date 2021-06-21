@@ -62,7 +62,7 @@ footer {
             ul {
                 li {
                     a {
-                        margin-left: 20px;
+                        margin-left: 10px;
                         text-decoration: none;
                         font-size: 15px;
                         color: #b8dc1e;
@@ -73,6 +73,17 @@ footer {
                         &:hover {
                             color: #ffffff;
                         }
+
+                        &::after {
+                            content:"\A";
+                            width: 5px;
+                            height: 5px;
+                            border-radius:50%;
+                            background: #919191;
+                            display: inline-block;
+                            margin-left: 10px;
+                            margin-bottom: 2px;
+                        }
                     }
                 }
             }
@@ -80,7 +91,7 @@ footer {
 
         .gray-title {
             color: #919191;
-            margin-left: 20px;
+            margin-left: 10px;
             font-size: 15px;
             font-weight: 400;
             font-family: "PT Sans";
