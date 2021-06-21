@@ -625,7 +625,7 @@
                             <button mat-button>CATEGORY</button>
                         </div>
                         <mat-form-field appearance="none">
-                            <input matInput [matDatepicker]="picker">
+                            <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate">
                             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                             <mat-datepicker #picker></mat-datepicker>
                         </mat-form-field>
@@ -640,7 +640,7 @@
                             <button mat-button>CATEGORY</button>
                         </div>
                         <mat-form-field appearance="none">
-                            <input matInput [matDatepicker]="picker1">
+                            <input matInput [matDatepicker]="picker1" [(ngModel)]="selectedDate1">
                             <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
                             <mat-datepicker #picker1></mat-datepicker>
                         </mat-form-field>
@@ -655,7 +655,7 @@
                             <button mat-button>CATEGORY</button>
                         </div>
                         <mat-form-field appearance="none">
-                            <input matInput [matDatepicker]="picker2">
+                            <input matInput [matDatepicker]="picker2" [(ngModel)]="selectedDate2">
                             <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
                             <mat-datepicker #picker2></mat-datepicker>
                         </mat-form-field>
@@ -676,7 +676,7 @@
                                 <button mat-button>CATEGORY</button>
                             </div>
                             <mat-form-field appearance="none">
-                                <input matInput [matDatepicker]="picker3">
+                                <input matInput [matDatepicker]="picker3" [(ngModel)]="selectedDate3">
                                 <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
                                 <mat-datepicker #picker3></mat-datepicker>
                             </mat-form-field>

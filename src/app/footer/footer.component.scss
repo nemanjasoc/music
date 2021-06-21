@@ -1,7 +1,8 @@
 @import 'src/app/scss/mixins';
+@import 'src/app/scss/variables';
 
 footer {
-    background-color: #333333;
+    background-color: $mainBlack;
     height: 110px;
     display: flex;
     align-items: center;
@@ -21,11 +22,11 @@ footer {
         }
 
         span {
-            color: #ffffff;
+            color: $mainWhite;
             font-size: 18px;
             line-height: 25px;
             font-weight: 400;
-            font-family: "PT Sans";
+            // font-family: "PT Sans", sans-serif;
         }
     }
 
@@ -36,7 +37,7 @@ footer {
         span {
             margin-right: 20px;
             font-size: 13px;
-            color: #b8dc1e;
+            color: $mainGreen;
             font-weight: 700;
             font-family: "Open Sans";
         }
@@ -65,13 +66,13 @@ footer {
                         margin-left: 10px;
                         text-decoration: none;
                         font-size: 15px;
-                        color: #b8dc1e;
+                        color: $mainGreen;
                         font-weight: 400;
-                        font-family: "PT Sans";
+                        // font-family: "PT Sans", sans-serif;
                         @include transition(color .2s linear);
 
                         &:hover {
-                            color: #ffffff;
+                            color: $mainWhite;
                         }
 
                         &::after {
@@ -94,7 +95,7 @@ footer {
             margin-left: 10px;
             font-size: 15px;
             font-weight: 400;
-            font-family: "PT Sans";
+            font-family: "PT Sans", sans-serif;
         }
     }
 }

@@ -1,4 +1,5 @@
 @import 'src/app/scss/mixins';
+@import 'src/app/scss/variables';
 
 // Editors section
 
@@ -13,9 +14,9 @@
 
     h1 {
         font-size: 35px;
-        color: #ffffff;
+        color: $mainWhite;
         font-weight: 700;
-        font-family: "PT Sans";
+        // font-family: "PT Sans", sans-serif;
         text-align: center;
     }
 }
@@ -35,7 +36,7 @@
     .song-box {
         width: 313px;
         height: 392px;
-        background-color: #ffffff;
+        background-color: $mainWhite;
         margin-bottom: 65px;
         display: flex;
         justify-content: center;
@@ -56,9 +57,9 @@
             h2 {
                 font-size: 30px;
                 line-height: 12px;
-                color: #ffffff;
+                color: $mainWhite;
                 font-weight: 700;
-                font-family: "PT Sans";
+                // font-family: "PT Sans", sans-serif;
                 text-align: center;
             }
 
@@ -67,9 +68,9 @@
                 width: 100%;
                 font-size: 15px;
                 line-height: 22px;
-                color: #ffffff;
+                color: $mainWhite;
                 font-weight: 400;
-                font-family: "PT Sans";
+                // font-family: "PT Sans", sans-serif;
                 text-align: center;
             }
         }
@@ -95,9 +96,9 @@
         h3 {
             font-size: 30px;
             line-height: 12px;
-            color: #333333;
+            color: $mainBlack;
             font-weight: 700;
-            font-family: "PT Sans";
+            // font-family: "PT Sans", sans-serif;
             text-align: center;
         }
 
@@ -107,19 +108,19 @@
             width: 100%;
             font-size: 18px;
             line-height: 22px;
-            color: #333333;
+            color: $mainBlack;
             font-weight: 400;
-            font-family: "PT Sans";
+            // font-family: "PT Sans", sans-serif;
             text-align: center;
         }
 
         .mat-button, 
         .mat-icon-button, 
         .mat-stroked-button {
-            background-color: #b8dc1e;
+            background-color: $mainGreen;
             border-radius: 0;
             font-size: 13px;
-            color: #333333;
+            color: $mainBlack;
             font-weight: 700;
             font-family: "Open Sans";
         }
@@ -128,7 +129,7 @@
 
 .horizontal-line {
     width: 70px;
-    border-bottom: 5px solid #b8dc1e;
+    border-bottom: 5px solid $mainGreen;
 }
 
 // Most popular section 
@@ -154,9 +155,9 @@
     
         h2 {
             font-size: 35px;
-            color: #ffffff;
+            color: $mainWhite;
             font-weight: 700;
-            font-family: "PT Sans";
+            // font-family: "PT Sans", sans-serif;
             text-align: center;
             margin-top: 0;
             margin-bottom: 60px;
@@ -178,7 +179,7 @@
 
 .most-popular-box-header {
     height: 60px;
-    background-color: #333333;
+    background-color: $mainBlack;
     border-bottom: 5px solid #bbdd28;
     display: flex;
     align-items: center;
@@ -186,7 +187,7 @@
 
     span {
         font-size: 15px;
-        color: #ffffff;
+        color: $mainWhite;
         font-weight: 700;
         font-family: 'Open Sans', sans-serif;
     }
@@ -195,7 +196,7 @@
 .most-popular-box-row {
     display: flex;
     padding: 10px;
-    background: #ffffff;
+    background: $mainWhite;
 
     .overlay-content {
         font-size: 34px;
@@ -244,13 +245,13 @@
     span {
         &:nth-child(1) {
             font-weight: 400;
-            font-size: 16px;
+            // font-size: 16px;
             font-family: 'PT Sans', sans-serif;
         }
 
         &:nth-child(2) {
             font-weight: 700;
-            font-size: 16px;
+            // font-size: 16px;
             font-family: 'PT Sans', sans-serif;
         }
     }
@@ -258,13 +259,14 @@
     .row-text-info {
         display: flex;
         align-items: center;
+        margin-top: 4px;
 
         span {
             font-size: 15px;
             line-height: 12px;
             color: #adadad;
             font-weight: 400;
-            font-family: "PT Sans";
+            // font-family: "PT Sans", sans-serif;
             margin: 0 5px;
         }
     }
@@ -273,14 +275,14 @@
 //Latest section
 
 .latest {
-    background-color: #ffffff;
+    background-color: $mainWhite;
     padding: 80px 0 90px 0;
     
     h2 {
         font-size: 35px;
-        color: #333333;
+        color: $mainBlack;
         font-weight: 700;
-        font-family: "PT Sans";
+        // font-family: "PT Sans", sans-serif;
         text-align: center;
     }
 }
@@ -293,7 +295,7 @@
 }
 
 .latest-box {
-    background-color: #ffffff;
+    background-color: $mainWhite;
     display: flex;
     flex-direction: column;
 
@@ -321,7 +323,7 @@
 }
 
 .latest-image-icons {
-    color: #ffffff;
+    color: $mainWhite;
     margin: 15px;
 
     img {
@@ -338,9 +340,9 @@
         span {
             font-size: 14px;
             line-height: 12px;
-            color: #ffffff;
+            color: $mainWhite;
             font-weight: 400;
-            font-family: "PT Sans";
+            // font-family: "PT Sans", sans-serif;
         }
     }
 }
@@ -352,10 +354,10 @@
     span {
         &:nth-child(1),
         &:nth-child(2) {
-            font-size: 16px;
-            color: #333333;
+            // font-size: 16px;
+            color: $mainBlack;
             font-weight: 400;
-            font-family: "PT Sans";
+            // font-family: "PT Sans", sans-serif;
             margin: 5px 0;
         }
 
@@ -374,9 +376,9 @@
     h2 {
         position: relative;
         font-size: 30px;
-        color: #333333;
+        color: $mainBlack;
         font-weight: 700;
-        font-family: "PT Sans";
+        // font-family: "PT Sans", sans-serif;
         text-align: center;
         margin-top: 0;
 
@@ -423,7 +425,7 @@
       
     .overlay {
         top: 0;
-        background-color: #333333;
+        background-color: $mainBlack;
     }
       
     .overlay-container {
@@ -443,19 +445,19 @@
 }
 
 .how-to-text-content {
-    background-color: #ffffff;
+    background-color: $mainWhite;
     display: flex;
     justify-content: space-between;
     padding: 5px 20px;
-    border-top: 10px solid #b8dc1e;
+    border-top: 10px solid $mainGreen;
     margin-top: -4px;
 
     .left-side-content {
         p {
             font-size: 20px;
-            color: #333333;
+            color: $mainBlack;
             font-weight: 700;
-            font-family: "PT Sans";
+            // font-family: "PT Sans", sans-serif;
         }
 
         .mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button {
@@ -464,11 +466,11 @@
             line-height: 25px;
             padding: 0px 6px;
             border-radius: 0;
-            border-left: 6px solid #b8dc1e;
+            border-left: 6px solid $mainGreen;
             font-size: 13px;
             color: #6f6c68;
             font-weight: 400;
-            font-family: "PT Sans";
+            // font-family: "PT Sans", sans-serif;
         }
     }
 

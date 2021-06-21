@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~font-awesome/css/font-awesome.min.css";
+@import 'src/app/scss/variables';
 
 html, body { 
     height: 100%; 
@@ -7,7 +8,8 @@ html, body {
 
 body { 
     margin: 0; 
-    // font-family: Roboto, "Helvetica Neue", sans-serif;  
+    font-size: 16px;
+    font-family: "PT Sans", sans-serif; 
 }
 
 ul {
@@ -29,16 +31,16 @@ li {
 }
 
 ::placeholder {
-    color: #b8dc1e;
+    color: $mainGreen;
     opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #b8dc1e;
+    color: $mainGreen;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #b8dc1e;
+    color: $mainGreen;
 }
 
 // Material select style
@@ -48,20 +50,20 @@ li {
 }
 
 .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
-    color: #333333;
+    color: $mainBlack;
 }
 
 .mat-option:hover:not(.mat-option-disabled), .mat-option:focus:not(.mat-option-disabled) {
-    background: #333333;
-    color: #ffffff;
+    background: $mainBlack;
+    color: $mainWhite;
 }
 
 .mat-select-value {
-    color: #ffffff;
+    color: $mainWhite;
 }
 
 .mat-select-arrow {
-    color: #ffffff;
+    color: $mainWhite;
     margin: 0 12px 0 0 !important;
 }
 
@@ -70,7 +72,7 @@ li {
 }
 
 .mat-form-field.mat-focused.mat-primary .mat-select-arrow {
-    color: #ffffff;
+    color: $mainWhite;
 }
 
 .mat-option {
@@ -103,9 +105,25 @@ li {
     text-align: center;
 }
 
-//How to material 
+//Material datepicker style 
+
 .how-to-text-content {
     .mat-form-field-infix {
         min-width: 70px !important;
+        position: relative;
+        bottom: 6px;
+    }
+
+    .mat-form-field-flex {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    input {
+        &.mat-input-element {
+            font-size: 14px;
+            line-height: 12px;
+            color: #333333;
+        }
     }
 }
