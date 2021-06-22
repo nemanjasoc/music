@@ -18,6 +18,87 @@
         font-weight: 700;
         // font-family: "PT Sans", sans-serif;
         text-align: center;
+        margin-top: 95px;
+        margin-bottom: 60px;
+    }
+}
+
+.slider-box {
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    .overlay-content {
+        font-size: 75px;
+    }
+}
+
+.slider-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 196px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    ul {
+        position: absolute;
+        bottom: 5px;
+
+        li {
+            color: $mainWhite;
+            margin: 0px 2px;
+            background: #645e54;
+            padding: 0 10px;
+            font-size: 11px;
+            font-weight: 700;
+            // font-family: "PT Sans", sans-serif;
+        }
+    }
+    
+}
+
+.slider-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #333333;
+        font-weight: 400;
+        text-align: center;
+        font-family: "PT Sans", sans-serif; 
+    }
+
+    h4 {
+        font-size: 25px;
+        color: #333333;
+        font-weight: 700;
+        font-family: "PT Sans", sans-serif;
+        text-align: center;
+        margin: 5px 0 12px 0;
+    }
+}
+
+.slider-info {
+    display: flex;
+    align-items: center;
+    margin: 18px 0 5px 0;
+
+    span {
+        font-size: 15px;
+        line-height: 12px;
+        color: #adadad;
+        font-weight: 400;
+        margin: 0 10px;
     }
 }
 
@@ -175,6 +256,7 @@
 .most-popular-box {
     width: 32%;
     margin: 20px 0;
+    background: #ffffff;
 }
 
 .most-popular-box-header {
@@ -195,8 +277,15 @@
 
 .most-popular-box-row {
     display: flex;
-    padding: 10px;
+    padding: 10px 0;
     background: $mainWhite;
+    border-bottom: 1px solid #d6d6d6;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+
+    &:last-of-type {
+        border: none;
+    }
 
     .overlay-content {
         font-size: 34px;
