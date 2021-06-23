@@ -12,33 +12,23 @@ export class MainComponent implements OnInit {
     selectedDate1 = new Date();
     selectedDate2 = new Date();
     selectedDate3 = new Date();
+    selectedDate4 = new Date();
     
     ngOnInit(): void {
         $('.slider').slick({
-            centerMode: true,
-            centerPadding: '60px',
             slidesToShow: 3,
+            slidesToScroll: 1,
             arrows: false,
-            responsive: [
-                // {
-                //     breakpoint: 768,
-                //     settings: {
-                //         arrows: false,
-                //         centerMode: true,
-                //         centerPadding: '40px',
-                //         slidesToShow: 3
-                //     }
-                // },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
+            prevArrow: false,
+            nextArrow: false,
+            dots: false,
+            centerMode: true,
+            variableWidth: true,
+            infinite: true,
+            focusOnSelect: true,
+            cssEase: 'linear',
+            touchMove: true,
+            centerPadding: '10px'
+          });
     }
 }

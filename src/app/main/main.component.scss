@@ -22,10 +22,68 @@
         margin-bottom: 60px;
     }
 }
+  
+// slick
+  .slider {
+    position: relative;
+    z-index: 200;
+    padding: 0 0px;
+    margin: 0 auto;
+    // max-width: 800px;
+    max-width: 1130px;
+    width: 100%;
+  }
+  
+  .slider-box.slick-slide {
+    width: 400px;
+    height: 355px !important;
+    // height: 400px !important;
+    transition: transform .4s;
+    position: relative; 
+  }
+  
+  .slider-box.slick-slide {
+    // transform: scale(0.7)  translate(640px);
+    transform: scale(0.7) translate(155px);
+    width: 226px;
+  }
+  
+  .slider-box.slick-slide.slick-center + .slick-slide {
+    // transform: scale(0.8) translate(-250px);
+    transform: scale(0.8) translate(-44px);
+    z-index: 10;
+    width: 226px;
+  }
+  
+  .slider-box.slick-slide.slick-center + .slick-slide + .slider-box.slick-slide {
+    // transform: scale(0.7)  translate(-640px);
+    transform: scale(0.7)  translate(-155px);
+    z-index: 5;
+    width: 226px;
+  }
+  
+  .slider-box.slick-slide.slick-active {
+    // transform: scale(0.8) translate(250px);
+    transform: scale(0.8) translate(44px);
+    width: 226px;
+  }
+  
+  .slider-box.slick-slide.slick-center {
+    /* margin: 0 -10%; */
+    transform: scale(1);
+    z-index: 30;
+    width: 226px;
+  }
+  
+  .slick-center:after {
+    opacity: 0;
+  }
+
+// my slick
 
 .slider-box {
     background-color: #ffffff;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -41,24 +99,42 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 196px;
-    width: 100%;
+    height: 226px;
+    // width: 100%;
+    width: 226px;
     position: relative;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+
+    .latest-image-effect {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        height: 90px;
+        justify-content: space-around;
+    }
 
     ul {
         position: absolute;
         bottom: 5px;
+        z-index: 100;
 
         li {
             color: $mainWhite;
             margin: 0px 2px;
-            background: #645e54;
+            // background: #645e54;
+            background-color: rgba(100,94,84,.5);
             padding: 0 10px;
             font-size: 11px;
             font-weight: 700;
+            cursor: pointer;
             // font-family: "PT Sans", sans-serif;
+
+            &:hover {
+                color: $mainGreen;
+                @include transition(color .3s linear);
+            }
         }
     }
     
@@ -91,7 +167,7 @@
 .slider-info {
     display: flex;
     align-items: center;
-    margin: 18px 0 5px 0;
+    margin: 10px 0 5px 0;
 
     span {
         font-size: 15px;
@@ -99,6 +175,10 @@
         color: #adadad;
         font-weight: 400;
         margin: 0 10px;
+    }
+
+    .mat-datepicker-toggle, .mat-datepicker-content .mat-calendar-next-button, .mat-datepicker-content .mat-calendar-previous-button {
+        color: #cccccc;
     }
 }
 
@@ -306,7 +386,7 @@
     width: 100%;
     height: 0;
     opacity: 0.8;
-    @include transition(all .5s ease);
+    @include transition(all .4s ease);
 }
   
 .overlay-container {

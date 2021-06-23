@@ -127,3 +127,30 @@ li {
         }
     }
 }
+
+.slider-info {
+    .mat-form-field-flex {
+        display: flex; 
+        flex-direction: row-reverse;
+    }
+
+    .mat-input-element {
+        font-size: 15px;
+        line-height: 12px;
+        color: #adadad;
+        font-weight: 400;
+        margin-bottom: 7px;
+    }
+
+    .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .mat-datepicker-toggle-default-icon, .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-datepicker-toggle-default-icon {
+        margin: 0;
+    }
+
+    .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button, .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button {
+        width: 25px;
+    }
+
+    .mat-form-field-infix {
+        width: 65px !important;
+    }
+}

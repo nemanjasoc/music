@@ -2,125 +2,170 @@
     <section class="editors">
         <div class="container">
             <h1>Editor's pick</h1>
-            <div class="slider">
-                <div class="slider-box">
-                    <div class="overlay-container">
-                        <div class="slider-image" style="background-image: url(../../assets/images/latest-img1.jpg)">
-                            <ul>
-                                <li>JAZZ</li>
-                                <li>CHILLOUT</li>
-                                <li>METAL</li>
-                            </ul>
+            <div class="wrap">  
+                <div class="slider">
+                    <div class="slider-box">
+                        <div class="overlay-container">
+                            <div class="slider-image" style="background-image: url(../../assets/images/latest-img1.jpg)">
+                                <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                    <ul>
+                                        <li>JAZZ</li>
+                                        <li>CHILLOUT</li>
+                                        <li>METAL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                        <div class="slider-text">
+                            <span>American Froggs</span>
+                            <h4>South Rebels</h4>
+                            <div class="horizontal-line"></div>
+                            <div class="slider-info">
+                                <img src="../../assets/images/clock.svg" alt="clock" />
+                                <span>2.53</span>
+                                <img src="../../assets/images/play.svg" alt="play" />
+                                <span>758</span>
+                                <!-- <img src="../../assets/images/heart.svg" alt="heart" /> -->
+                                <!-- <span>17</span> -->
+                                <mat-form-field appearance="none">
+                                    <input matInput [matDatepicker]="picker4" [(ngModel)]="selectedDate4">
+                                    <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker4></mat-datepicker>
+                                </mat-form-field>
                             </div>
                         </div>
                     </div>
-                    <div class="slider-text">
-                        <span>American Froggs</span>
-                        <h4>South Rebels</h4>
-                        <div class="horizontal-line"></div>
-                        <div class="slider-info">
-                            <img src="../../assets/images/clock.svg" alt="clock" />
-                            <span>2.53</span>
-                            <img src="../../assets/images/play.svg" alt="play" />
-                            <span>17</span>
-                            <img src="../../assets/images/heart.svg" alt="heart" />
-                            <span>17</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="slider-box">
-                    <div class="slider-image" style="background-image: url(../../assets/images/latest-img4.jpg)">
-                        <ul>
-                            <li>JAZZ</li>
-                            <li>CHILLOUT</li>
-                            <li>METAL</li>
-                        </ul>
-                    </div>
-                    <div class="slider-text">
-                        <span>Saga Forest</span>
-                        <h4>Your Love hurts</h4>
-                        <div class="horizontal-line"></div>
-                        <div class="slider-info">
-                            <img src="../../assets/images/clock.svg" alt="clock" />
-                            <span>2.53</span>
-                            <img src="../../assets/images/play.svg" alt="play" />
-                            <span>17</span>
-                            <img src="../../assets/images/heart.svg" alt="heart" />
-                            <span>17</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="slider-box">
-                    <div class="slider-image" style="background-image: url(../../assets/images/latest-img7.jpg)">
-                        <ul>
-                            <li>JAZZ</li>
-                            <li>CHILLOUT</li>
-                            <li>METAL</li>
-                        </ul>
-                    </div>
-                    <div class="slider-text">
-                        <span>Ian McAlister</span>
-                        <h4>Saturday night</h4>
-                        <div class="horizontal-line"></div>
-                        <div class="slider-info">
-                            <img src="../../assets/images/clock.svg" alt="clock" />
-                            <span>2.53</span>
-                            <img src="../../assets/images/play.svg" alt="play" />
-                            <span>17</span>
-                            <img src="../../assets/images/heart.svg" alt="heart" />
-                            <span>17</span>
+                    <div class="slider-box">
+                        <div class="overlay-container">
+                            <div class="slider-image" style="background-image: url(../../assets/images/latest-img12.jpg)">
+                                <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                    <ul>
+                                        <li>JAZZ</li>
+                                        <li>CHILLOUT</li>
+                                        <li>METAL</li>
+                                    </ul>
+                                </div>
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                        <div class="slider-text">
+                            <span>Saga Forest</span>
+                            <h4>Your Love hurts</h4>
+                            <div class="horizontal-line"></div>
+                            <div class="slider-info">
+                                <img src="../../assets/images/clock.svg" alt="clock" />
+                                <span>2.53</span>
+                                <img src="../../assets/images/play.svg" alt="play" />
+                                <span>17</span>
+                                <img src="../../assets/images/heart.svg" alt="heart" />
+                                <span>17</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="slider-box">
-                    <div class="slider-image" style="background-image: url(../../assets/images/latest-img12.jpg)">
-                        <ul>
-                            <li>JAZZ</li>
-                            <li>CHILLOUT</li>
-                            <li>METAL</li>
-                        </ul>
-                    </div>
-                    <div class="slider-text">
-                        <span>Saga Forest</span>
-                        <h4>Your Love hurts</h4>
-                        <div class="horizontal-line"></div>
-                        <div class="slider-info">
-                            <img src="../../assets/images/clock.svg" alt="clock" />
-                            <span>2.53</span>
-                            <img src="../../assets/images/play.svg" alt="play" />
-                            <span>17</span>
-                            <img src="../../assets/images/heart.svg" alt="heart" />
-                            <span>17</span>
+
+                    <div class="slider-box">
+                        <div class="overlay-container">
+                            <div class="slider-image" style="background-image: url(../../assets/images/latest-img10.jpg)">
+                                <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                    <ul>
+                                        <li>JAZZ</li>
+                                        <li>CHILLOUT</li>
+                                        <li>METAL</li>
+                                    </ul>
+                                </div>
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-text">
+                            <span>Ian McAlister</span>
+                            <h4>Saturday night</h4>
+                            <div class="horizontal-line"></div>
+                            <div class="slider-info">
+                                <img src="../../assets/images/clock.svg" alt="clock" />
+                                <span>2.53</span>
+                                <img src="../../assets/images/play.svg" alt="play" />
+                                <span>17</span>
+                                <img src="../../assets/images/heart.svg" alt="heart" />
+                                <span>17</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-              
-                <div class="slider-box">
-                    <div class="slider-image" style="background-image: url(../../assets/images/latest-img10.jpg)">
-                        <ul>
-                            <li>JAZZ</li>
-                            <li>CHILLOUT</li>
-                            <li>METAL</li>
-                        </ul>
+                    
+                    <div class="slider-box">
+                        <div class="overlay-container">
+                            <div class="slider-image" style="background-image: url(../../assets/images/latest-img7.jpg)">
+                                <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                    <ul>
+                                        <li>JAZZ</li>
+                                        <li>CHILLOUT</li>
+                                        <li>METAL</li>
+                                    </ul>
+                                </div>
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-text">
+                            <span>Ian McAlister</span>
+                            <h4>Saturday night</h4>
+                            <div class="horizontal-line"></div>
+                            <div class="slider-info">
+                                <img src="../../assets/images/clock.svg" alt="clock" />
+                                <span>2.53</span>
+                                <img src="../../assets/images/play.svg" alt="play" />
+                                <span>17</span>
+                                <img src="../../assets/images/heart.svg" alt="heart" />
+                                <span>17</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="slider-text">
-                        <span>Ian McAlister</span>
-                        <h4>Saturday night</h4>
-                        <div class="horizontal-line"></div>
-                        <div class="slider-info">
-                            <img src="../../assets/images/clock.svg" alt="clock" />
-                            <span>2.53</span>
-                            <img src="../../assets/images/play.svg" alt="play" />
-                            <span>17</span>
-                            <img src="../../assets/images/heart.svg" alt="heart" />
-                            <span>17</span>
+
+                    <div class="slider-box">
+                        <div class="overlay-container">
+                            <div class="slider-image" style="background-image: url(../../assets/images/latest-img4.jpg)">
+                                <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                    <ul>
+                                        <li>JAZZ</li>
+                                        <li>CHILLOUT</li>
+                                        <li>METAL</li>
+                                    </ul>
+                                </div>
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-text">
+                            <span>Saga Forest</span>
+                            <h4>Your Love hurts</h4>
+                            <div class="horizontal-line"></div>
+                            <div class="slider-info">
+                                <img src="../../assets/images/clock.svg" alt="clock" />
+                                <span>2.53</span>
+                                <img src="../../assets/images/play.svg" alt="play" />
+                                <span>17</span>
+                                <img src="../../assets/images/heart.svg" alt="heart" />
+                                <span>17</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -182,7 +227,14 @@
                             <span>SONGS</span>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-songs1.jpg" alt="most popular songs1" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-songs1.jpg" alt="most popular songs1" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -197,7 +249,14 @@
                             </div>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-songs2.jpg" alt="most popular songs2" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-songs2.jpg" alt="most popular songs2" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -212,7 +271,14 @@
                             </div>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-songs3.jpg" alt="most popular songs3" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-songs3.jpg" alt="most popular songs3" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -227,7 +293,14 @@
                             </div>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-songs4.jpg" alt="most popular songs4" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-songs4.jpg" alt="most popular songs4" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -242,7 +315,14 @@
                             </div>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-songs5.jpg" alt="most popular songs5" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-songs5.jpg" alt="most popular songs5" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -263,7 +343,14 @@
                             <span>ALBUMS</span>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-albums1.jpg" alt="most popular albums1" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-albums1.jpg" alt="most popular albums1" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -278,7 +365,14 @@
                             </div>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-albums2.jpg" alt="most popular albums2" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-albums2.jpg" alt="most popular albums2" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -293,7 +387,14 @@
                             </div>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-albums3.jpg" alt="most popular albums3" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-albums3.jpg" alt="most popular albums3" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -308,7 +409,14 @@
                             </div>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-albums4.jpg" alt="most popular albums4" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-albums4.jpg" alt="most popular albums4" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -323,7 +431,14 @@
                             </div>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-albums5.jpg" alt="most popular albums5" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-albums5.jpg" alt="most popular albums5" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -344,7 +459,14 @@
                             <span>PLAYLISTS</span>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-playlists1.jpg" alt="most popular playlists1" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-playlists1.jpg" alt="most popular playlists1" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -359,7 +481,14 @@
                             </div>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-playlists2.jpg" alt="most popular playlists2" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-playlists2.jpg" alt="most popular playlists2" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -374,7 +503,14 @@
                             </div>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-playlists3.jpg" alt="most popular playlists3" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-playlists3.jpg" alt="most popular playlists3" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -389,7 +525,14 @@
                             </div>
                         </div>
                         <div class="most-popular-box-row">
-                            <img src="../../assets/images/most-popular-playlists4.jpg" alt="most popular playlists4" />
+                            <div class="overlay-container">
+                                <img src="../../assets/images/most-popular-playlists4.jpg" alt="most popular playlists4" />
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-text">
                                 <span>DJ Quatern</span>
                                 <span>Bad and Boujee </span>
@@ -436,21 +579,28 @@
             <h2>Latest</h2>
             <div class="latest-images-wrapper">
                 <div class="latest-box">
-                    <div class="latest-img" style="background-image: url(../../assets/images/latest-img1.jpg)">
-                        <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
-                            <div class="latest-image-icons">
-                                <div>
-                                    <img src="../../assets/images/play.svg" alt="play" />
-                                    <span>43</span>
+                    <div class="overlay-container">
+                        <div class="latest-img" style="background-image: url(../../assets/images/latest-img1.jpg)">
+                            <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                <div class="latest-image-icons">
+                                    <div>
+                                        <img src="../../assets/images/play.svg" alt="play" />
+                                        <span>43</span>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/heart.svg" alt="heart" />
+                                        <span>122</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src="../../assets/images/heart.svg" alt="heart" />
-                                    <span>122</span>
+                                <div class="latest-image-icons">
+                                    <img src="../../assets/images/clock.svg" alt="clock" />
+                                    <span>2:53</span>
                                 </div>
                             </div>
-                            <div class="latest-image-icons">
-                                <img src="../../assets/images/clock.svg" alt="clock" />
-                                <span>2:53</span>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -460,21 +610,28 @@
                     </div>
                 </div>
                 <div class="latest-box">
-                    <div class="latest-img" style="background-image: url(../../assets/images/latest-img2.jpg)">
-                        <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
-                            <div class="latest-image-icons">
-                                <div>
-                                    <img src="../../assets/images/play.svg" alt="play" />
-                                    <span>43</span>
+                    <div class="overlay-container">
+                        <div class="latest-img" style="background-image: url(../../assets/images/latest-img2.jpg)">
+                            <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                <div class="latest-image-icons">
+                                    <div>
+                                        <img src="../../assets/images/play.svg" alt="play" />
+                                        <span>43</span>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/heart.svg" alt="heart" />
+                                        <span>122</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src="../../assets/images/heart.svg" alt="heart" />
-                                    <span>122</span>
+                                <div class="latest-image-icons">
+                                    <img src="../../assets/images/clock.svg" alt="clock" />
+                                    <span>2:53</span>
                                 </div>
                             </div>
-                            <div class="latest-image-icons">
-                                <img src="../../assets/images/clock.svg" alt="clock" />
-                                <span>2:53</span>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -484,21 +641,28 @@
                     </div>
                 </div>
                 <div class="latest-box">
-                    <div class="latest-img" style="background-image: url(../../assets/images/latest-img3.jpg)">
-                        <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
-                            <div class="latest-image-icons">
-                                <div>
-                                    <img src="../../assets/images/play.svg" alt="play" />
-                                    <span>43</span>
+                    <div class="overlay-container">
+                        <div class="latest-img" style="background-image: url(../../assets/images/latest-img3.jpg)">
+                            <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                <div class="latest-image-icons">
+                                    <div>
+                                        <img src="../../assets/images/play.svg" alt="play" />
+                                        <span>43</span>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/heart.svg" alt="heart" />
+                                        <span>122</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src="../../assets/images/heart.svg" alt="heart" />
-                                    <span>122</span>
+                                <div class="latest-image-icons">
+                                    <img src="../../assets/images/clock.svg" alt="clock" />
+                                    <span>2:53</span>
                                 </div>
                             </div>
-                            <div class="latest-image-icons">
-                                <img src="../../assets/images/clock.svg" alt="clock" />
-                                <span>2:53</span>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -508,21 +672,28 @@
                     </div>
                 </div>
                 <div class="latest-box">
-                    <div class="latest-img" style="background-image: url(../../assets/images/latest-img4.jpg)">
-                        <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
-                            <div class="latest-image-icons">
-                                <div>
-                                    <img src="../../assets/images/play.svg" alt="play" />
-                                    <span>43</span>
+                    <div class="overlay-container">
+                        <div class="latest-img" style="background-image: url(../../assets/images/latest-img4.jpg)">
+                            <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                <div class="latest-image-icons">
+                                    <div>
+                                        <img src="../../assets/images/play.svg" alt="play" />
+                                        <span>43</span>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/heart.svg" alt="heart" />
+                                        <span>122</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src="../../assets/images/heart.svg" alt="heart" />
-                                    <span>122</span>
+                                <div class="latest-image-icons">
+                                    <img src="../../assets/images/clock.svg" alt="clock" />
+                                    <span>2:53</span>
                                 </div>
                             </div>
-                            <div class="latest-image-icons">
-                                <img src="../../assets/images/clock.svg" alt="clock" />
-                                <span>2:53</span>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -532,21 +703,28 @@
                     </div>
                 </div>
                 <div class="latest-box">
-                    <div class="latest-img" style="background-image: url(../../assets/images/latest-img5.jpg)">
-                        <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
-                            <div class="latest-image-icons">
-                                <div>
-                                    <img src="../../assets/images/play.svg" alt="play" />
-                                    <span>43</span>
+                    <div class="overlay-container">
+                        <div class="latest-img" style="background-image: url(../../assets/images/latest-img5.jpg)">
+                            <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                <div class="latest-image-icons">
+                                    <div>
+                                        <img src="../../assets/images/play.svg" alt="play" />
+                                        <span>43</span>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/heart.svg" alt="heart" />
+                                        <span>122</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src="../../assets/images/heart.svg" alt="heart" />
-                                    <span>122</span>
+                                <div class="latest-image-icons">
+                                    <img src="../../assets/images/clock.svg" alt="clock" />
+                                    <span>2:53</span>
                                 </div>
                             </div>
-                            <div class="latest-image-icons">
-                                <img src="../../assets/images/clock.svg" alt="clock" />
-                                <span>2:53</span>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -556,21 +734,28 @@
                     </div>
                 </div>
                 <div class="latest-box">
-                    <div class="latest-img" style="background-image: url(../../assets/images/latest-img6.jpg)">
-                        <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
-                            <div class="latest-image-icons">
-                                <div>
-                                    <img src="../../assets/images/play.svg" alt="play" />
-                                    <span>43</span>
+                    <div class="overlay-container">
+                        <div class="latest-img" style="background-image: url(../../assets/images/latest-img6.jpg)">
+                            <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                <div class="latest-image-icons">
+                                    <div>
+                                        <img src="../../assets/images/play.svg" alt="play" />
+                                        <span>43</span>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/heart.svg" alt="heart" />
+                                        <span>122</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src="../../assets/images/heart.svg" alt="heart" />
-                                    <span>122</span>
+                                <div class="latest-image-icons">
+                                    <img src="../../assets/images/clock.svg" alt="clock" />
+                                    <span>2:53</span>
                                 </div>
                             </div>
-                            <div class="latest-image-icons">
-                                <img src="../../assets/images/clock.svg" alt="clock" />
-                                <span>2:53</span>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -581,21 +766,28 @@
                 </div>
 
                 <div class="latest-box">
-                    <div class="latest-img" style="background-image: url(../../assets/images/latest-img7.jpg)">
-                        <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
-                            <div class="latest-image-icons">
-                                <div>
-                                    <img src="../../assets/images/play.svg" alt="play" />
-                                    <span>43</span>
+                    <div class="overlay-container">
+                        <div class="latest-img" style="background-image: url(../../assets/images/latest-img7.jpg)">
+                            <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                <div class="latest-image-icons">
+                                    <div>
+                                        <img src="../../assets/images/play.svg" alt="play" />
+                                        <span>43</span>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/heart.svg" alt="heart" />
+                                        <span>122</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src="../../assets/images/heart.svg" alt="heart" />
-                                    <span>122</span>
+                                <div class="latest-image-icons">
+                                    <img src="../../assets/images/clock.svg" alt="clock" />
+                                    <span>2:53</span>
                                 </div>
                             </div>
-                            <div class="latest-image-icons">
-                                <img src="../../assets/images/clock.svg" alt="clock" />
-                                <span>2:53</span>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -605,21 +797,28 @@
                     </div>
                 </div>
                 <div class="latest-box">
-                    <div class="latest-img" style="background-image: url(../../assets/images/latest-img8.jpg)">
-                        <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
-                            <div class="latest-image-icons">
-                                <div>
-                                    <img src="../../assets/images/play.svg" alt="play" />
-                                    <span>43</span>
+                    <div class="overlay-container">
+                        <div class="latest-img" style="background-image: url(../../assets/images/latest-img8.jpg)">
+                            <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                <div class="latest-image-icons">
+                                    <div>
+                                        <img src="../../assets/images/play.svg" alt="play" />
+                                        <span>43</span>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/heart.svg" alt="heart" />
+                                        <span>122</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src="../../assets/images/heart.svg" alt="heart" />
-                                    <span>122</span>
+                                <div class="latest-image-icons">
+                                    <img src="../../assets/images/clock.svg" alt="clock" />
+                                    <span>2:53</span>
                                 </div>
                             </div>
-                            <div class="latest-image-icons">
-                                <img src="../../assets/images/clock.svg" alt="clock" />
-                                <span>2:53</span>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -629,21 +828,28 @@
                     </div>
                 </div>
                 <div class="latest-box">
-                    <div class="latest-img" style="background-image: url(../../assets/images/latest-img9.jpg)">
-                        <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
-                            <div class="latest-image-icons">
-                                <div>
-                                    <img src="../../assets/images/play.svg" alt="play" />
-                                    <span>43</span>
+                    <div class="overlay-container">
+                        <div class="latest-img" style="background-image: url(../../assets/images/latest-img9.jpg)">
+                            <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                <div class="latest-image-icons">
+                                    <div>
+                                        <img src="../../assets/images/play.svg" alt="play" />
+                                        <span>43</span>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/heart.svg" alt="heart" />
+                                        <span>122</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src="../../assets/images/heart.svg" alt="heart" />
-                                    <span>122</span>
+                                <div class="latest-image-icons">
+                                    <img src="../../assets/images/clock.svg" alt="clock" />
+                                    <span>2:53</span>
                                 </div>
                             </div>
-                            <div class="latest-image-icons">
-                                <img src="../../assets/images/clock.svg" alt="clock" />
-                                <span>2:53</span>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -653,21 +859,28 @@
                     </div>
                 </div>
                 <div class="latest-box">
-                    <div class="latest-img" style="background-image: url(../../assets/images/latest-img10.jpg)">
-                        <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
-                            <div class="latest-image-icons">
-                                <div>
-                                    <img src="../../assets/images/play.svg" alt="play" />
-                                    <span>43</span>
+                    <div class="overlay-container">
+                        <div class="latest-img" style="background-image: url(../../assets/images/latest-img10.jpg)">
+                            <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                <div class="latest-image-icons">
+                                    <div>
+                                        <img src="../../assets/images/play.svg" alt="play" />
+                                        <span>43</span>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/heart.svg" alt="heart" />
+                                        <span>122</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src="../../assets/images/heart.svg" alt="heart" />
-                                    <span>122</span>
+                                <div class="latest-image-icons">
+                                    <img src="../../assets/images/clock.svg" alt="clock" />
+                                    <span>2:53</span>
                                 </div>
                             </div>
-                            <div class="latest-image-icons">
-                                <img src="../../assets/images/clock.svg" alt="clock" />
-                                <span>2:53</span>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -708,21 +921,28 @@
                     </div>
                 </div>
                 <div class="latest-box">
-                    <div class="latest-img" style="background-image: url(../../assets/images/latest-img12.jpg)">
-                        <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
-                            <div class="latest-image-icons">
-                                <div>
-                                    <img src="../../assets/images/play.svg" alt="play" />
-                                    <span>43</span>
+                    <div class="overlay-container">
+                        <div class="latest-img" style="background-image: url(../../assets/images/latest-img12.jpg)">
+                            <div class="latest-image-effect" style="background-image: url(../../assets/images/latest-image-effect.png)">
+                                <div class="latest-image-icons">
+                                    <div>
+                                        <img src="../../assets/images/play.svg" alt="play" />
+                                        <span>43</span>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/heart.svg" alt="heart" />
+                                        <span>122</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src="../../assets/images/heart.svg" alt="heart" />
-                                    <span>122</span>
+                                <div class="latest-image-icons">
+                                    <img src="../../assets/images/clock.svg" alt="clock" />
+                                    <span>2:53</span>
                                 </div>
                             </div>
-                            <div class="latest-image-icons">
-                                <img src="../../assets/images/clock.svg" alt="clock" />
-                                <span>2:53</span>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -739,49 +959,70 @@
         <div class="container">
             <h2>How to</h2>
             <div class="how-to-wrapper">
-                <div class="how-to-box">
-                    <div class="how-to-image" style="background-image: url(../../assets/images/how-to-img1.jpg)">
-                    </div>
-                    <div class="how-to-text-content">
-                        <div class="left-side-content">
-                            <p>General FAQ's<p>
-                            <button mat-button>CATEGORY</button>
+                    <div class="how-to-box">
+                    <div class="overlay-container">
+                        <div class="how-to-image" style="background-image: url(../../assets/images/how-to-img1.jpg)">
                         </div>
-                        <mat-form-field appearance="none">
-                            <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate">
-                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                            <mat-datepicker #picker></mat-datepicker>
-                        </mat-form-field>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <img src="../../assets/images/hat.svg" alt="hat" />
+                            </div>
+                        </div>
+                        <div class="how-to-text-content">
+                            <div class="left-side-content">
+                                <p>General FAQ's<p>
+                                <button mat-button>CATEGORY</button>
+                            </div>
+                            <mat-form-field appearance="none">
+                                <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate">
+                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
                     </div>
                 </div>
                 <div class="how-to-box">
-                    <div class="how-to-image" style="background-image: url(../../assets/images/how-to-img2.jpg)">
-                    </div>
-                    <div class="how-to-text-content">
-                        <div class="left-side-content">
-                            <p>General FAQ's<p>
-                            <button mat-button>CATEGORY</button>
+                    <div class="overlay-container">
+                        <div class="how-to-image" style="background-image: url(../../assets/images/how-to-img2.jpg)">
                         </div>
-                        <mat-form-field appearance="none">
-                            <input matInput [matDatepicker]="picker1" [(ngModel)]="selectedDate1">
-                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-                            <mat-datepicker #picker1></mat-datepicker>
-                        </mat-form-field>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <img src="../../assets/images/hat.svg" alt="hat" />
+                            </div>
+                        </div>
+                        <div class="how-to-text-content">
+                            <div class="left-side-content">
+                                <p>General FAQ's<p>
+                                <button mat-button>CATEGORY</button>
+                            </div>
+                            <mat-form-field appearance="none">
+                                <input matInput [matDatepicker]="picker1" [(ngModel)]="selectedDate1">
+                                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                <mat-datepicker #picker1></mat-datepicker>
+                            </mat-form-field>
+                        </div>
                     </div>
                 </div>
                 <div class="how-to-box">
-                    <div class="how-to-image" style="background-image: url(../../assets/images/how-to-img3.jpg)">
-                    </div>
-                    <div class="how-to-text-content">
-                        <div class="left-side-content">
-                            <p>General FAQ's<p>
-                            <button mat-button>CATEGORY</button>
+                    <div class="overlay-container">
+                        <div class="how-to-image" style="background-image: url(../../assets/images/how-to-img3.jpg)">
                         </div>
-                        <mat-form-field appearance="none">
-                            <input matInput [matDatepicker]="picker2" [(ngModel)]="selectedDate2">
-                            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
-                            <mat-datepicker #picker2></mat-datepicker>
-                        </mat-form-field>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <img src="../../assets/images/hat.svg" alt="hat" />
+                            </div>
+                        </div>
+                        <div class="how-to-text-content">
+                            <div class="left-side-content">
+                                <p>General FAQ's<p>
+                                <button mat-button>CATEGORY</button>
+                            </div>
+                            <mat-form-field appearance="none">
+                                <input matInput [matDatepicker]="picker2" [(ngModel)]="selectedDate2">
+                                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                <mat-datepicker #picker2></mat-datepicker>
+                            </mat-form-field>
+                        </div>
                     </div>
                 </div>
                 <div class="how-to-box">
