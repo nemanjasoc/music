@@ -47,6 +47,8 @@ li {
 
 .mat-form-field-infix {
     width: 40px !important;
+    padding: 0 0;
+    border-top: 0;
 }
 
 .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
@@ -80,11 +82,6 @@ li {
     text-align: center;
 }
 
-.mat-form-field-infix {
-    padding: 0 0;
-    border-top: 0;
-}
-
 .mat-form-field-wrapper {
     padding-bottom: 0;
 }
@@ -112,9 +109,6 @@ li {
         min-width: 70px !important;
         position: relative;
         bottom: 6px;
-    }
-
-    .mat-form-field-flex {
         display: flex;
         flex-direction: row-reverse;
     }

@@ -18,15 +18,13 @@ header {
                 padding: 5px 0;
                 
                 a {
-                    // font-size: 16px;
                     font-weight: 400;
-                    // font-family: "PT Sans", sans-serif;
                     margin-left: auto;
                     color: $mainWhite;
                     padding: 10px;
                     cursor: pointer;
                     text-decoration: none;
-                    @include transition(color 0.2 linear);
+                    @include transition(color .2s linear);
     
                     &:hover,
                     &.active {
@@ -37,7 +35,7 @@ header {
                 .fa-caret-down {
                     color: $mainWhite;
                     cursor: pointer;
-                    @include transition(color 0.2 linear);
+                    @include transition(color .2s linear);
 
                     &:hover {
                         color: $mainGreen;
@@ -62,7 +60,6 @@ header {
             color: $mainWhite;
             font-size: 16px;
             font-weight: 400;
-            // font-family: "PT Sans", sans-serif;
         }
 
         .fa-search {
@@ -147,7 +144,7 @@ header {
         display: flex;
         font-size: 22px;
         color: $mainWhite;
-        @include transition(color 0.2 linear);
+        @include transition(color .2s linear);
 
         &:hover {
             color: $mainGreen;

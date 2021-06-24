@@ -26,7 +26,6 @@ footer {
             font-size: 18px;
             line-height: 25px;
             font-weight: 400;
-            // font-family: "PT Sans", sans-serif;
         }
     }
 
@@ -68,7 +67,6 @@ footer {
                         font-size: 15px;
                         color: $mainGreen;
                         font-weight: 400;
-                        // font-family: "PT Sans", sans-serif;
                         @include transition(color .2s linear);
 
                         &:hover {

@@ -29,6 +29,6 @@ export class MainComponent implements OnInit {
             cssEase: 'linear',
             touchMove: true,
             centerPadding: '10px'
-          });
+        });
     }
 }
